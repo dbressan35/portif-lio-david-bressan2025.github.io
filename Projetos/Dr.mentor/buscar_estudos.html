@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Estudantes</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='buscar_estudos.css'>
+  <script src="buscar.js"></script>
+</head>
+
+<body>
+
+  <h2>Buscar informações de mentorados:</h2>
+        <!-- BUSCAR OS DADOS DE MENTORADO DO BANCO -->
+  <form method="GET" action="buscar_estudos.php">
+    <input type="text" name="nome" placeholder="Digite o nome desejado">
+    <input type="submit" value="Buscar">
+  </form>
+        <!-- MOSTRAR TODOS OS REGISTROS DE MENTORADO DO BANCO -->
+  <form method="GET" action="buscar_estudos.php" style="margin-top: 10px;">
+    <input type="hidden" name="todos" value="1">
+    <button type="submit">Mostrar todos os registros</button>
+  </form>
+        <!-- CONFIRMAÇÃO DE MENTORIA -->
+  <div class="container">
+    <h2>Agendamentos de mentorias:</h2>
+    <div id="lista"></div>
+  </div>
+        <!-- BUSCAR OS DADOS DE CADASTROS DO BANCO -->
+  <h2>Buscar registros de login:</h2>
+  <form method="GET" action="listar.php">
+    <input type="text" name="nome" placeholder="Digite o nome desejado">
+    <input type="submit" value="Buscar">
+  </form>
+
+  <a href="inicial.html" class="sair">Sair</a>
+
+</body>
+
+</html>

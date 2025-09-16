@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login com Loading</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login.js"></script>
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <img src="imagens/LogopretaS.png" alt="logo" width="140px" height="50px">
+    <input type="text" id="username" placeholder="Usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <a href="formulario_estudos.html" class="link-cadastro" onclick="showLoading()">Cadastre-se</a>
+    <div id="error" class="error"></div>
+  </div>
+
+  <div id="loading">Carregando...</div>
+
+
+</body>
+
+</html>
