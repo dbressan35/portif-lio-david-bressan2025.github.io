@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário mentorado</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='formulario.css'>
+</head>
+
+<body>
+
+  <h2>Formulário Mentorado</h2>
+  <h5>Preencha o formulário com suas informações referente a sua rotina de estudos:
+  </h5>
+
+  <form action="salvar_estudo.php" method="post">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="data_nascimento">Data de nascimento:</label>
+    <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+    <label>Quanto tempo de estudo você costuma estudar ao dia? :</label>
+    <div class="radio-group">
+      <label><input type="radio" name="tempo_estudo" value="1 a 3 horas" required> 1 a 3 horas ao dia.</label>
+      <label><input type="radio" name="tempo_estudo" value="4 a 5 horas"> 4 a 5 horas ao dia.</label>
+      <label><input type="radio" name="tempo_estudo" value="6 a 10 horas"> 6 a 10 horas ao dia.</label>
+      <label><input type="radio" name="tempo_estudo" value="Mais de 10 horas"> Mais de 10 horas ao dia.</label>
+      <label><input type="radio" name="tempo_estudo" value="Não estudo"> Não estudo ainda.</label>
+    </div>
+
+    <label>Quais dias da semana você estuda?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="dia_semana" value="Segunda-feira" required> Segunda-feira</label>
+      <label><input type="radio" name="dia_semana" value="Terça-feira"> Terça-feira</label>
+      <label><input type="radio" name="dia_semana" value="Quarta-feira"> Quarta-feira</label>
+      <label><input type="radio" name="dia_semana" value="Quinta-feira"> Quinta-feira</label>
+      <label><input type="radio" name="dia_semana" value="Sexta-feira"> Sexta-feira</label>
+      <label><input type="radio" name="dia_semana" value="Sábado"> Sábado</label>
+      <label><input type="radio" name="dia_semana" value="Domingo"> Domingo</label>
+    </div>
+
+    <label for="conteudo_gosta">Qual conteúdo você gosta de estudar?</label>
+    <input type="text" id="conteudo_gosta" name="conteudo_gosta" required>
+
+    <label for="conteudo_precisa">Qual conteúdo você precisa estudar?</label>
+    <input type="text" id="conteudo_precisa" name="conteudo_precisa" required>
+
+    <label>Qual a finalidade dos seus estudos hoje?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="finalidade_estudo" value="Entrar para uma faculdade" required> Entrar para uma
+        faculdade.</label>
+      <label><input type="radio" name="finalidade_estudo" value="Prestar concurso"> Prestar concurso.</label>
+      <label><input type="radio" name="finalidade_estudo" value="Apenas para aumento do conhecimento"> Apenas para
+        aumento do conhecimento.</label>
+      <label><input type="radio" name="finalidade_estudo" value="Estudo porque eu gosto de estudar"> Estudo porque eu
+        gosto de estudar.</label>
+    </div>
+
+    <label>Por onde você nos conheceu?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="conheceu_por" value="Instagram" required> Instagram</label>
+      <label><input type="radio" name="conheceu_por" value="Youtube"> Youtube</label>
+      <label><input type="radio" name="conheceu_por" value="WhatsApp"> WhatsApp</label>
+      <label><input type="radio" name="conheceu_por" value="Twitter"> Twitter</label>
+      <label><input type="radio" name="conheceu_por" value="Pela Dr. Leticia Zen"> Pela Dra. Leticia Zen</label>
+      <label><input type="radio" name="conheceu_por" value="Indicação de um amigo/conhecido"> Indicação de um
+        amigo/conhecido</label>
+    </div>
+
+    <input type="submit" value="Enviar" class="enviar">
+  </form>
+
+
+</body>
+
+</html>
