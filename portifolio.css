@@ -148,6 +148,7 @@ main a {
 }
 
 .imagens-projetos {
+    padding-left: 13%;
     width: 100%;
     margin-bottom: 8px;
     justify-content: center;
@@ -264,6 +265,9 @@ main a {
 
     /* INÍCIO PROJETOS */
 
+    .imagens-projetos {
+        padding-left: 13%;
+    }
     .imagens-projetos img {
         width: 30%;
 
@@ -288,4 +292,5 @@ main a {
     }
 
     /* FIM RODAPE */
+
 }
